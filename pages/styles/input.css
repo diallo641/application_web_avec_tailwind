@@ -1,1 +1,21 @@
 @import "tailwindcss";
+@theme {
+  --color-nile-blue-50:  #f4f7fb;
+  --color-nile-blue-100: #e8eef6;
+  --color-nile-blue-200: #cbddec;
+  --color-nile-blue-300: #9ec0db;
+  --color-nile-blue-400: #699fc7;
+  --color-nile-blue-500: #4683b1;
+  --color-nile-blue-600: #356894;
+  --color-nile-blue-700: #2c5478;
+  --color-nile-blue-800: #274765;
+  --color-nile-blue-900: #233a50;
+  --color-nile-blue-950: #192838;
+};
+
+@layer Components {
+  .navlink{
+    @apply font-semibold text-white hover:text-cyan-500 hover:underline transition duration-300;
+  }
+
+},
