@@ -20,9 +20,23 @@
                 <li>
                     <a href="../pages/propos.html" class="navlink">À propos</a>
                 </li>
-                 <li>
-                    <a href="../pages/services.html" class="navlink">Services</a>
-                </li>
+                 <!-- Bloc Services -->
+      <li class="relative group">
+        <a href="../pages/services.html" class="flex items-center navlink">
+          Services
+          <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180"
+               fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+
+        <!-- Sous-menu -->
+        <ul class="absolute left-0 top-full bg-white text-blue-700 rounded-lg shadow-lg mt-1 w-44 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
+          <li><a href="../pages/enfants.html" class="block px-4 py-2 hover:bg-blue-100">Enfants</a></li>
+          <li><a href="../pages/hommes.html" class="block px-4 py-2 hover:bg-blue-100">Hommes</a></li>
+          <li><a href="../pages/femmes.html" class="block px-4 py-2 hover:bg-blue-100 rounded-b-lg">Femmes</a></li>
+        </ul>
+      </li>
                  <li>
                      <a href="../pages/contact.html" class="text-white hover:text-gray-300 navlink">Contact</a>
                 </li> 
@@ -33,5 +47,173 @@
             </ul>    
         </div>   
     </header> 
+    <div class="container  p-4 flex flex-col justify-center items-center w-full h-[200px] bg-cover md:w-full md:h-[250px]" style="background-image: url('https://images.pexels.com/photos/8386646/pexels-photo-8386646.jpeg');">
+        <h1 class="font-bold text-white text-2xl md:text-4xl text-center my-6">
+             Chez Nous
+        </h1>
+        <p class="text-white font-medium text-center text-lg md:text-2xl px-4 mb-6">
+            Nous offrons les meilleurs produits pour répondre à vos besoins. Que vous cherchiez des produits unique, notre équipe est là pour vous aider à chaque étape de votre choix.
+        </p>
+    </div>
+    <!--Produits-->
+    <section class="p-4">
+    <div class="container mx-auto">
+        <h1 class="font-semibold text-nile-blue-500 text-2xl md:text-4xl text-center my-6">
+             Nos Produits
+        </h1>
+        <div>
+               <h2 class="font-semibold text-nile-blue-500 text-2xl md:text-4xl my-6">Pour enfants</h2>
+                <div class=" grid grid-cols-1 md:grid-cols-4 gap-10 justify-items-center">
+                <a href="../pages/enfants.html">
+                    <div class="">
+                    <img src="https://images.unsplash.com/photo-1699901232413-9754207c2ac8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <p>Tee-shirt</p>
+                    <p>
+                        <span class="text-gray-500"> Prix: 20€</span>
+                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                    </p>
+                </div>
+                </a>
+                <a href="../pages/enfants.html">
+                    <div class="">
+                    <img src="https://images.unsplash.com/photo-1711934047742-44a49e7225b9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <p>Chemise en rayures bleu</p>
+                    <p>
+                        <span class="text-gray-500"> Prix: 20€</span>
+                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                    </p>
+                </div>
+                </a>
+                <a href="../pages/enfants.html">
+                    <div class="">
+                    <img src="https://plus.unsplash.com/premium_photo-1730122126507-83b9f8186fc3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <p>All-Star en noir et blanc</p>
+                    <p>
+                        <span class="text-gray-500"> Prix: 20€</span>
+                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                    </p>
+                </div>
+                </a>
+                <a href="../pages/enfants.html">
+                    <div class="">
+                    <img src="https://media.istockphoto.com/id/1202695612/photo/wooden-toys-clothes-and-shoes-on-beige-background.jpg?s=1024x1024&w=is&k=20&c=1TKVmPB4mgfjHQrjBDurBikYsE4fU-y_H0nNXZLI6g0=" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <p>Accessoires</p>
+                    <p>
+                        <span class="text-gray-500"> Prix: 20€</span>
+                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                    </p>
+                </div>
+                </a>       
+            </div>              
+        </div>
+        <!--Pour hommes-->
+        <div>
+               <h2 class="font-semibold text-nile-blue-500 text-2xl md:text-4xl my-6">Pour Hommes</h2>
+                <div class=" grid grid-cols-1 md:grid-cols-4 gap-10 justify-items-center">
+                <a href="../pages/hommes.html">
+                    <div class="">
+                    <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dmV0ZW1lbnQlMjBob21tZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=800" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <p>Kaki</p>
+                    <p>
+                        <span class="text-gray-500"> Prix: 20€</span>
+                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                    </p>
+                </div>
+                </a>
+                <a href="../pages/hommes.html">
+                    <div class="">
+                    <img src="https://plus.unsplash.com/premium_photo-1725075088969-73798c9b422c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1742" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <p>Chemise en lin</p>
+                    <p>
+                        <span class="text-gray-500"> Prix: 20€</span>
+                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                    </p>
+                </div>
+                </a>
+                <a href="../pages/hommes.html">
+                    <div class="">
+                    <img src="https://images.unsplash.com/photo-1668069226492-508742b03147?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <p>Italien en noir</p>
+                    <p>
+                        <span class="text-gray-500"> Prix: 20€</span>
+                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                    </p>
+                </div>
+                </a>
+                <a href="../pages/hommes.html">
+                    <div class="">
+                    <img src="https://plus.unsplash.com/premium_photo-1661385963299-c08f8590a652?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <p>Italien en noir</p>
+                    <p>
+                        <span class="text-gray-500"> Prix: 20€</span>
+                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                    </p>
+                </div>
+                </a>       
+            </div>              
+        </div>
+        <!--Pour femmes-->
+        <div>
+               <h2 class="font-semibold text-nile-blue-500 text-2xl md:text-4xl my-6">Pour femmes</h2>
+                <div class=" grid grid-cols-1 md:grid-cols-4 gap-10 justify-items-center">
+                <a href="../pages/femmes.html">
+                    <div class="">
+                    <img src="https://images.unsplash.com/flagged/photo-1556825594-e4bedd8d3545?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <p>Robe courte en blanc</p>
+                    <p>
+                        <span class="text-gray-500"> Prix: 20€</span>
+                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                    </p>
+                </div>
+                </a>
+                <a href="../pages/femmes.html">
+                    <div class="">
+                    <img src="https://images.unsplash.com/photo-1549375957-bfec91770be3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=702" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <p>Veste en jean bleu</p>
+                    <p>
+                        <span class="text-gray-500"> Prix: 20€</span>
+                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                    </p>
+                </div>
+                </a>
+                <a href="../pages/femmes.html">
+                     <div class="">
+                    <img src="https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <p>Talon en beige</p>
+                    <p>
+                        <span class="text-gray-500"> Prix: 20€</span>
+                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                    </p>
+                </div>
+                </a>
+                <a href="../pages/femmes.html">
+                     <div class="">
+                    <img src="https://plus.unsplash.com/premium_photo-1661645417454-fabe3698fe4a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
+                    <p>Accessoires</p>
+                    <p>
+                        <span class="text-gray-500"> Prix: 20€</span>
+                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                    </p>
+                </div>
+                </a>       
+            </div>              
+        </div>
+    </div>
+    </section>    
+     <!-- footer -->
+         <footer class="bg-nile-blue-900 text-white p-4">
+          <div class="container mx-auto text-center flex flex-col md:flex-row md:justify-between md:items-center">
+            <div>
+                <p class="sm:text-xl font-semibold md:text-2xl">&copy; 2025 Application Web avec Tailwind. Tous droits réservés.</p>
+            </div>
+            <div>
+                <p class="mb-4">Suivez-nous:
+                    <a href="#" class="text-2xl mr-3 hover:bg-nile-blue-500"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-2xl mr-3 hover:bg-nile-blue-500"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-2xl mr-3 hover:bg-nile-blue-500"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-2xl mr-3 hover:bg-nile-blue-500"><i class="fa-brands fa-linkedin"></i></a>
+                </p>
+            </div>      
+          </div>
 </body>
 </html>
