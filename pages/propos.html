@@ -15,21 +15,28 @@
             </a>
             <ul class="flex flex-col text-xl space-y-2 md:text-xl md:flex-row gap-2 md:gap-6 px-4">
                 <li>
-                    <a href="../index.html" class="navlink">Accueil</a> 
+                    <a href="../pages/accueil.html" class="navlink">Accueil</a> 
                 </li>
                 <li>
-                    <a href="./pages/propos.html" class="navlink">À propos</a>
+                    <a href="../pages/propos.html" class="navlink">À propos</a>
                 </li>
-                 <li>
-                    <a href="../pages/services.html" class="navlink">Services</a>
+                 <li class="relative group">
+                    <a href="../pages/services.html" class="flex items-center navlink">
+                         Services
+                         <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180"
+                                   fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                     </a> 
+                     <ul class="absolute left-0 top-full bg-white text-blue-700 rounded-lg shadow-lg mt-1 w-44 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
+                        <li><a href="../pages/enfants.html" class="block px-4 py-2 hover:bg-blue-100">Enfants</a></li>
+                        <li><a href="../pages/hommes.html" class="block px-4 py-2 hover:bg-blue-100">Hommes</a></li>
+                        <li><a href="../pages/femmes.html" class="block px-4 py-2 hover:bg-blue-100 rounded-b-lg">Femmes</a></li>
+                    </ul>  
                 </li>
                  <li>
                      <a href="../pages/contact.html" class="text-white hover:text-gray-300 navlink">Contact</a>
                 </li> 
-                <button class="relative bg-white text-blue-600 px-3 py-1 rounded-lg hover:bg-gray-100 transition">
-                  🛒 <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1 rounded-full">0
-                  </span>
-                </button>
             </ul>      
         </div>   
     </header> 
