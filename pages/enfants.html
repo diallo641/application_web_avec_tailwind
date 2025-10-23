@@ -37,12 +37,15 @@
                  <li>
                      <a href="../pages/contact.html" class="text-white hover:text-gray-300 navlink">Contact</a>
                 </li> 
-                <button class="relative bg-white text-blue-600 px-3 py-1 rounded-lg hover:bg-gray-100 transition">
+                <button id="nombre" class="relative bg-white text-blue-600 px-3 py-1 rounded-lg hover:bg-gray-100 transition">
                   🛒 <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1 rounded-full">0
                   </span>
                 </button>
             </ul>    
-        </div>   
+        </div> 
+        <div id="contenu-panier" 
+       class="absolute right-0 top-8 bg-white border rounded shadow p-3 w-64 hidden">
+  </div>  
     </header> 
     <div class="container  p-4 flex flex-col justify-center items-center w-full h-[200px] bg-center md:w-full md:h-[250px]" style="background-image: url('https://images.pexels.com/photos/7139185/pexels-photo-7139185.jpeg');">
         <h1 class="font-bold text-nile-blue-500 text-2xl md:text-4xl text-center my-6">
@@ -61,21 +64,25 @@
         <div>
                <h3 class="font-medium text-nile-blue-500 text-lg md:text-2xl mb-4">>>>Tee-shirt</h3>
                 <div class=" grid grid-cols-1 md:grid-cols-4 gap-10 justify-items-center">
-                <div class="mt-4">
+                <div class="">
                     <img src="https://images.unsplash.com/photo-1699901232413-9754207c2ac8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
-                    <p>Tee-shirt</p>
+                    <p class="nom-produit font-semibold text-xl text-nile-blue-500">
+                        Sac à main
+                    </p> 
                     <p>
-                        <span class="text-gray-500"> Prix: 20€</span>
-                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
-                    </p>
+                        <span class="prix-produit text-red-500 font-bold">89.99 €</span>
+                        <button  class="btn-panier mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                    </p> 
                 </div>
                 <div class="">
                     <img src="https://media.istockphoto.com/id/527862023/photo/little-african-boy-outdoors.jpg?s=1024x1024&w=is&k=20&c=eylGGhE7M9FVzK1ymhvfQOOplTRgNzy4yihGDFGV72M=" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
-                    <p>Tee-shirt</p>
+                    <p class="nom-produit font-semibold text-xl text-nile-blue-500">
+                        Sac à main
+                    </p> 
                     <p>
-                        <span class="text-gray-500"> Prix: 20€</span>
-                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
-                    </p>
+                        <span class="prix-produit text-red-500 font-bold">89.99 €</span>
+                        <button  class="btn-panier mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                    </p> 
                 </div>
                 <div class="">
                     <img src="https://images.unsplash.com/photo-1650200414149-b4c77ebdca2c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" alt="Produit Enfant" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
@@ -181,6 +188,7 @@
                     <a href="#" class="text-2xl mr-3 hover:bg-nile-blue-500"><i class="fa-brands fa-linkedin"></i></a>
                 </p>
             </div>      
-          </div>   
+          </div> 
+          <script src="../pages/script.js"></script>  
 </body>
 </html>

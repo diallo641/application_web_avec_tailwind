@@ -26,13 +26,15 @@
                  <li>
                      <a href="./pages/contact.html" class="text-white hover:text-gray-300 navlink">Contact</a>
                 </li> 
-                <button class="relative bg-white text-blue-600 px-3 py-1 rounded-lg hover:bg-gray-100 transition">
-                  🛒 <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1 rounded-full">0
+                <button id="nombre" class="relative bg-white text-blue-600 px-3 py-1 rounded-lg hover:bg-gray-100 transition">
+                  🛒 <span id="compter" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1 rounded-full">0
                   </span>
                 </button>
-            </ul>
-            
-        </div>   
+            </ul>  
+        </div> 
+        <div id="contenu-panier" 
+       class="absolute right-0 top-8 bg-white border rounded shadow p-3 w-64 hidden">
+  </div>  
     </header> 
     <!-- premiere section --> 
      <section class="h-[50vh] w-full bg-cover bg-bottom flex items-center justify-center text-white mb-4"
@@ -45,9 +47,7 @@
             </button>
         </div>
      </section>
-     <!--Presentataion de la boutique 
-
-https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg-->
+     <!--Presentataion de la boutique-->
      <section class="p-4">
         <div class="container mx-auto flex flex-col md:flex-row lg:flex-row items-center gap-8">
             <div class="sm:flex-col">
@@ -77,7 +77,7 @@ https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg-->
             </h1>
             <div class="p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-items-center  rounded-lg mb-6">
                 <div class="">
-                     <a>
+                     <a href="./pages/enfants.html">
                          <img src="https://images.unsplash.com/photo-1741992556912-3b2d62461e75?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1742" alt="categorie1" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
                      </a>
                       <p class="font-semibold text-xl text-nile-blue-500">
@@ -85,7 +85,7 @@ https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg-->
                       </p>
                 </div>
                 <div class="">
-                     <a>
+                     <a href="./pages/hommes.html">
                          <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dmV0ZW1lbnQlMjBob21tZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=800" alt="categorie1" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
                      </a>
                       <p class="font-semibold text-xl text-nile-blue-500">
@@ -93,7 +93,7 @@ https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg-->
                       </p>
                 </div>
                 <div class="">
-                     <a>
+                     <a href="./pages/femmes.html">
                          <img src="https://plus.unsplash.com/premium_photo-1661351421471-b288544c3dda?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="categorie1" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
                      </a>
                       <p class="font-semibold text-xl text-nile-blue-500">
@@ -101,7 +101,7 @@ https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg-->
                       </p>
                 </div>
                  <div class="">
-                     <a>
+                     <a href="./pages/services.html">
                          <img src="https://images.unsplash.com/photo-1597737175203-3b86b744081a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="categorie1" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
                      </a>
                       <p class="font-semibold text-xl text-nile-blue-500 text-center">
@@ -109,7 +109,7 @@ https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg-->
                       </p>
                 </div>
                  <div class="">
-                     <a>
+                     <a href="./pages/enfants.html">
                          <img src="https://images.unsplash.com/photo-1742390671765-c87aaed67ad8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1325" alt="categorie1" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
                      </a>
                       <p class="font-semibold text-xl text-nile-blue-500">
@@ -117,7 +117,7 @@ https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg-->
                       </p>
                 </div>
                  <div class="">
-                     <a>
+                     <a href="./pages/hommes.html">
                          <img src="https://images.unsplash.com/photo-1668069226492-508742b03147?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="categorie1" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
                      </a>
                       <p class="font-semibold text-xl text-nile-blue-500">
@@ -125,7 +125,7 @@ https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg-->
                       </p>
                 </div>
                  <div class="">
-                     <a>
+                     <a href="./pages/femmes.html">
                          <img src="https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="categorie1" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
                      </a>
                       <p class="font-semibold text-xl text-nile-blue-500">
@@ -133,7 +133,7 @@ https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg-->
                       </p>
                 </div>
                  <div class="">
-                     <a >
+                     <a href="./pages/services.html">
                          <img src="https://images.pexels.com/photos/34327704/pexels-photo-34327704.jpeg" alt="categorie1" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
                      </a>
                      <a>
@@ -154,42 +154,42 @@ https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg-->
             <div class="p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-items-center  rounded-lg mb-6">
                 <div>
                     <img src="https://images.unsplash.com/photo-1759572095384-1a7e646d0d4f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2727" alt="categorie1" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
-                    <p class="font-semibold text-xl text-nile-blue-500">
+                    <p class="nom-produit font-semibold text-xl text-nile-blue-500">
                         Tee-shirt en noir
                     </p> 
                     <p>
-                        <span class="text-red-500 font-bold">19.99 €</span>
-                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                        <span class="prix-produit text-red-500 font-bold">19.99 €</span>
+                        <button class="btn-panier mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
                     </p>     
                 </div>
                 <div>
                     <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="categorie1" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
-                    <p class="font-semibold text-xl text-nile-blue-500">
+                    <p class="nom-produit font-semibold text-xl text-nile-blue-500">
                         Baskets
                     </p> 
                     <p>
-                        <span class="text-red-500 font-bold">59.99 €</span>
-                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                        <span class="prix-produit text-red-500 font-bold">59.99 €</span>
+                        <button class="btn-panier mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
                     </p>   
                 </div>
                 <div>
                     <img src="https://plus.unsplash.com/premium_photo-1723826753083-2309f7203ab1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="categorie1" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
-                    <p class="font-semibold text-xl text-nile-blue-500">
+                    <p class="nom-produit font-semibold text-xl text-nile-blue-500">
                         Sac à main
                     </p> 
                     <p>
-                        <span class="text-red-500 font-bold">89.99 €</span>
-                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                        <span class="prix-produit text-red-500 font-bold">89.99 €</span>
+                        <button  class="btn-panier mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
                     </p>      
                 </div>
                  <div>
                     <img src="https://images.unsplash.com/photo-1725387072845-7431bbc453bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=872" alt="categorie1" class="size-42 mb-4 rounded-lg hover:scale-105 transition-transform duration-300">
-                    <p class="font-semibold text-xl text-nile-blue-500">
+                    <p class="nom-produit font-semibold text-xl text-nile-blue-500">
                         Jean
                     </p> 
                     <p>
-                        <span class="text-red-500 font-bold">39.99 €</span>
-                        <button class="mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
+                        <span class="prix-produit text-red-500 font-bold">39.99 €</span>
+                        <button class="btn-panier mt-4 px-4 py-2 bg-nile-blue-700 text-white rounded-lg hover:bg-cyan-700">Ajouter au panier</button>
                     </p>      
                 </div>
             </div>
@@ -208,10 +208,10 @@ https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg-->
                     <a href="#" class="text-2xl mr-3 hover:bg-nile-blue-500"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#" class="text-2xl mr-3 hover:bg-nile-blue-500"><i class="fa-brands fa-linkedin"></i></a>
                 </p>
-            </div>
-      
-               
+            </div>            
           </div>
+          <script src="./pages/script.js">
 
+          </script>
 </body>
 </html>

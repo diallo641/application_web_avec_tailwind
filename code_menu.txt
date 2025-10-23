@@ -1,0 +1,62 @@
+line-through
+<header class="relative z-50">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between p-2 bg-nile-blue-900">
+    <!-- Logo -->
+    <a href="../index.html">
+      <img src="https://play-lh.googleusercontent.com/9v08ai07I8aoFLj5M-90nzWPpvyNzOVgA2ZWF9avdW7oS8L9YqF9trVI44SUn2qGTA0"
+           alt="logo" class="h-auto w-20 border-4 border-white">
+    </a>
+
+    <!-- Menu -->
+    <ul class="flex flex-col md:flex-row items-center text-xl gap-4 md:gap-6 text-white">
+      <li><a href="../index.html" class="navlink">Accueil</a></li>
+      <li><a href="../pages/propos.html" class="navlink">À propos</a></li>
+
+      <!-- Bloc Services -->
+      <li class="relative group">
+        <!-- Bouton Services (clic mobile) -->
+        <button id="servicesBtn" class="flex items-center navlink focus:outline-none">
+          Services
+          <svg class="w-4 h-4 ml-1 transition-transform" id="arrowIcon"
+               fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+
+        <!-- Sous-menu -->
+        <ul id="submenu"
+            class="absolute left-0 top-full bg-white text-blue-700 rounded-lg shadow-lg mt-1 w-44 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out md:group-hover:block md:opacity-100 md:visible hidden">
+          <li><a href="../pages/enfants.html" class="block px-4 py-2 hover:bg-blue-100">Enfants</a></li>
+          <li><a href="../pages/hommes.html" class="block px-4 py-2 hover:bg-blue-100">Hommes</a></li>
+          <li><a href="../pages/femmes.html" class="block px-4 py-2 hover:bg-blue-100 rounded-b-lg">Femmes</a></li>
+        </ul>
+      </li>
+
+      <li><a href="../pages/contact.html" class="navlink">Contact</a></li>
+
+      <!-- Panier -->
+      <button class="relative bg-white text-blue-600 px-3 py-1 rounded-lg hover:bg-gray-100 transition">
+        🛒 <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1 rounded-full">0</span>
+      </button>
+    </ul>
+  </div>
+</header>
+
+<!-- JS -->
+<script>
+  // Récupère les éléments
+  const servicesBtn = document.getElementById('servicesBtn');
+  const submenu = document.getElementById('submenu');
+  const arrowIcon = document.getElementById('arrowIcon');
+
+  // Gestion du clic sur mobile
+  servicesBtn.addEventListener('click', () => {
+    // Sur mobile seulement (md:hidden)
+    if (window.innerWidth < 768) {
+      submenu.classList.toggle('hidden');
+      submenu.classList.toggle('opacity-100');
+      submenu.classList.toggle('visible');
+      arrowIcon.classList.toggle('rotate-180');
+    }
+  });
+</script>
