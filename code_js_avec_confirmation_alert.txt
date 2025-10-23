@@ -1,0 +1,21 @@
+contenuPanier.addEventListener('click', function(e) {
+  if (e.target.id === 'commander') {
+    let confirmation = confirm("Voulez-vous confirmer la commande ?");
+    if (confirmation) {
+      // L'utilisateur a cliqué sur OK
+      contenuPanier.innerHTML = "<p class='text-green-600 font-semibold'>Commande ajoutée avec succès !</p>";
+      panier = [];
+      count = 0;
+      afficherCompteur();
+      setTimeout(() => {
+        contenuPanier.classList.add('hidden');
+      }, 3000);
+    } else {
+      // L'utilisateur a cliqué sur Annuler
+      contenuPanier.innerHTML = "<p class='text-yellow-600 font-semibold'>Commande annulée par l'utilisateur.</p>";
+      setTimeout(() => {
+        contenuPanier.classList.add('hidden');
+      }, 3000);
+    }
+  }
+});
